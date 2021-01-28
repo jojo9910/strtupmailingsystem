@@ -38,7 +38,7 @@ app.post('/register',(req,res)=>{
 
 var user={ email: req.body.email};
 db.query('INSERT INTO users SET ?',user,function(error,results,fields){
-if(error) throw error;
+if(error) res.send('Mail already registered!!!!');
 res.redirect('/');
 });
 });
