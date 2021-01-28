@@ -5,8 +5,12 @@ const bodyparser=require('body-parser');
 app.set("view engine", "ejs");
 const faker=require('faker');
 const db = require("./modules/db");
+const { static } = require('express');
 
 app.use(bodyparser.urlencoded({extended:true}));
+app.use(express.static(__dirname+"/public"));
+
+//////////////////////////////////////////////////////
 // var data = [];
 // for (var i = 0; i < 500; i++) {
 //     data.push([

@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mailing List</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Slabo+27px&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+   
+<link rel="stylesheet" href="/main.css">
 </head>
 <body>
-
+<div class="flex-container">
+    <div class="container">
 <h1>JOIN US</h1>
 
-<p class="lead">Enter your email to join <strong><%= count %>
-     </strong>
-    others on our waitlist. We are 100% not a cult. </p>
+<p class="lead">Enter your email to join <strong><%= count %></strong> others on our waitlist.</p>
 
 <form method="POST" action='/register'>
 <input type="text" class="form" name="email" placeholder="Enter Your Email">
 <button>Join Now</button>
 </form>
-    
+</div>
+</div>
 
 </body>
 </html>
